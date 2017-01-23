@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
@@ -8,10 +9,55 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="souleima.saviour.LoginActivity">
+    tools:context="souleima.saviour.LoginActivity"
+    android:background="@color/loginBackground">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/etLoginMail"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etLoginPassword"
+        android:hint="@string/stLoginPasswordHint" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etLoginMail"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etLoginPassword"
+        android:layout_alignStart="@+id/etLoginPassword"
+        android:layout_marginTop="196dp"
+        android:hint="@string/stLoginMailHint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLoginForgotPassword"
+        android:text="@string/stLoginForgotPassword"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@+id/btLogin"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/btLogin"
+        android:text="@string/stLogin"
+        android:layout_below="@+id/etLoginPassword"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLoginCreateAccount"
+        android:text="@string/stLoginCreateAccount"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

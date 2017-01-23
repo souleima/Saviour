@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Saviour</string>
+    <string name="stLoginForgotPassword">Forgot your password?</string>
+    <string name="stLogin">Log In</string>
+    <string name="stLoginCreateAccount">Don't have an account? Create one</string>
+    <string name="stLoginMailHint">Email</string>
+    <string name="stLoginPasswordHint">Password</string>
 </resources>
