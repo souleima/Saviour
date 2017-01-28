@@ -29,7 +29,8 @@ public class EmergencyNumbersActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                call("20275748");
+                //put the numbers according
+                call("");
             }
 
         });
@@ -37,7 +38,8 @@ public class EmergencyNumbersActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                call("20275748");
+                //put the numbers according
+                call("");
             }
 
         });
@@ -45,7 +47,8 @@ public class EmergencyNumbersActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                call("20275748");
+                //put the numbers according
+                call("");
             }
 
         });
