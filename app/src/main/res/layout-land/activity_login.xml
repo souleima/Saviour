@@ -73,32 +73,6 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/etLoginPassword"
-        android:hint="@string/stLoginPasswordHint"
-        android:drawableLeft="@drawable/password"
-        android:drawablePadding="40dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:fontFamily="casual"
-        android:textSize="20sp"
-        android:textColor="@android:color/background_dark"
-        android:textColorHint="@android:color/background_dark"
-        android:background="@color/editTextLoginBackground"
-        android:textColorLink="?attr/actionMenuTextColor"
-        android:textColorHighlight="@android:color/background_dark"
-        android:textCursorDrawable="@android:color/background_dark"
-        android:layout_above="@+id/btLogin"
-        android:layout_alignLeft="@+id/btLogin"
-        android:layout_alignStart="@+id/btLogin"
-        android:layout_marginBottom="102dp"
-        android:layout_alignRight="@+id/btLogin"
-        android:layout_alignEnd="@+id/btLogin" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/etLoginMail"
@@ -116,10 +90,35 @@
         android:textColorHighlight="@android:color/background_dark"
         android:freezesText="true"
         android:layout_above="@+id/etLoginPassword"
-        android:layout_alignLeft="@+id/etLoginPassword"
-        android:layout_alignStart="@+id/etLoginPassword"
-        android:layout_alignRight="@+id/etLoginPassword"
-        android:layout_alignEnd="@+id/etLoginPassword" />
+        android:layout_alignRight="@+id/btLogin"
+        android:layout_alignEnd="@+id/btLogin"
+        android:layout_alignLeft="@+id/btLogin"
+        android:layout_alignStart="@+id/btLogin" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etLoginPassword"
+        android:hint="@string/stLoginPasswordHint"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="40dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:background="@color/editTextLoginBackground"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textCursorDrawable="@android:color/background_dark"
+        android:layout_above="@+id/btLogin"
+        android:layout_alignRight="@+id/btLogin"
+        android:layout_alignEnd="@+id/btLogin"
+        android:layout_alignLeft="@+id/btLogin"
+        android:layout_alignStart="@+id/btLogin" />
 
     <TextView
         android:text="SaveMe !"
@@ -130,10 +129,8 @@
         android:fontFamily="cursive"
         android:textColor="@color/loginButton"
         android:textAlignment="center"
-        android:paddingTop="40dp"
-        android:layout_marginBottom="12dp"
-        android:layout_above="@+id/etLoginMail"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true" />
+        android:layout_above="@+id/etLoginMail" />
 
 </RelativeLayout>

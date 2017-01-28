@@ -1,8 +1,26 @@
 <resources>
-    <string name="app_name">Saviour</string>
+    <string name="app_name">SaveMe!</string>
     <string name="stLoginForgotPassword">Forgot your password?</string>
     <string name="stLogin">Log In</string>
+    <string name="stRegister">Register</string>
     <string name="stLoginCreateAccount">Don t have an account? Create one</string>
     <string name="stLoginMailHint">Email</string>
     <string name="stLoginPasswordHint">Password</string>
+    <string name="stRegisterMailHint">Email</string>
+    <string name="stRegisterPasswordHint">Password</string>
+    <string name="stRegisterConfirmationPasswordHint">Password Again</string>
+    <string name="stLoginOr">or</string>
+    <string name="facebook_app_id" translatable="false">1643645665939848</string>
+    <string name="stPolice">Call Police</string>
+    <string name="stFirefighters">Call Firefighters</string>
+    <string name="stEmergency">Call Emergency</string>
+    <string-array name="FirstAidKitArray">
+        <item>Shuttle Badminton</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
+    </string-array>
 </resources>
