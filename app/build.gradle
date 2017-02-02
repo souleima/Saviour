@@ -4,6 +4,8 @@ android {
     compileSdkVersion 25
     buildToolsVersion "24.0.1"
     defaultConfig {
+        testInstrumentationRunner "com.android.test.runner.MultiDexTestRunner"
+        multiDexEnabled true
         applicationId "souleima.saviour"
         minSdkVersion 16
         targetSdkVersion 25
@@ -17,6 +19,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
@@ -24,14 +27,19 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    testCompile 'junit:junit:4.12'
 
-    compile 'com.google.firebase:firebase-core:9.4.0'
-    compile 'com.google.android.gms:play-services-auth:9.4.0'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
     compile 'com.firebaseui:firebase-ui:0.4.4'
     compile 'com.facebook.android:facebook-android-sdk:3.21.1'
-    compile 'com.nightonke:boommenu:2.0.7'
+    compile 'com.google.android.gms:play-services:10.0.1'
+    compile 'com.android.support:multidex:1.0.0'
+    testCompile 'junit:junit:4.12'
 }
+
+
+
 
 apply plugin: 'com.google.gms.google-services'
